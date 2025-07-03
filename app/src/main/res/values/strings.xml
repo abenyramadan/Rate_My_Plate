@@ -1,0 +1,36 @@
+<resources>
+
+    <string-array name="meal_types">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string name="app_name">Rate My Plate</string>
+    <string name="meal_description_max_150_chars">"Meal Description "</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="submit_meal">Submit Meal</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="meal_images">Meal Images</string>
+    <string name="app_scrolling">App Scrolling</string>
+    <string name="meal_image">Meal Image</string>
+    <string name="upload">Upload</string>
+    <string name="camera">Camera</string>
+    <string name="enter_a_short_description_max_150">Enter a short description (max 150)</string>
+    <string name="_0_150">0/150</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="mealtype">MealType</string>
+    <string name="rating_7_10">Rating: 7/10</string>
+    <string name="calories_350">Calories: 350</string>
+
+    <string name="meal_rating">Rating: %1$d/10</string>
+    <string name="meal_calories">Calories: %1$d</string>
+    <string name="add_meal">+ Add Meal</string>
+    <string name="image">Image</string>
+    <string name="submitted_meals">📸 Submitted Meals</string>
+
+</resources>
+
+

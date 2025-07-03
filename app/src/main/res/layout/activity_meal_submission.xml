@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MealSubmission">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:contentDescription="@string/app_scrolling"
+        tools:context=".SubmitMealActivity">
+
+        <LinearLayout
+            android:id="@+id/Linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="32dp" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@color/black"
+                android:contentDescription="@string/meal_image"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/uploadBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/upload" />
+
+                <View android:layout_width="16dp" android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/cameraBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/camera" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/descriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="A Meal description"
+                android:hint="@string/enter_a_short_description_max_150"
+                android:maxLength="150"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:minHeight="100dp"
+                android:gravity="top|start"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/characterCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_150"
+                android:textColor="@android:color/darker_gray"
+                android:layout_gravity="end"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mealtype"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/mealTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/submitMealBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_meal"
+                android:enabled="false" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
